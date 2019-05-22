@@ -18,11 +18,6 @@ if ($userId && $password)
         $row = $result->fetch_array(MYSQLI_NUM);
         $result->close;
 
-        /*
-        $salt1 = "qm&h*";
-        $salt2 = "pg!@";
-        $token = hash('ripemd128', "$salt1$password$salt2");
-         */
         $saved_userId = $row['userId'];
         $saved_password = $row['password'];
 
